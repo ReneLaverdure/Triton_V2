@@ -1,0 +1,21 @@
+.alert {
+  background: grey;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+  padding: .8rem 1.4rem;
+
+}
+
+.alert-warning {
+  background: $primary-colour-light;
+}
+
+.alert-danger {
+  background: $primary-colour-light;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        
+        <title>Triton</title>
+    </head>
+<body>
+
+    <main class="main">
+        <div class="title">
+            <h1>Triton</h1>
+        </div>
+        
+        <div class="display">
+            <div class="display__header">
+                <button class="btn btn__primary">NEWFEED</button>
+
+
+                <div class="display__header--options">
+                    
+                    <button id="headlineBtn" class="btn tablink">Top Headline</button>
+                    <button id="everythingBtn" class="btn tablink">All Things</button>
+                    <button id="sourcesBtn" class="btn tablink">Search Source</button>
+                </div>
+                <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span>hello there</span>
+                </label> -->
+            </div>
+
+            <div class="display__content tabcontent" id="headlines">
+                <div class="display__content--item"  >
+                    <h2>Top Headlines</h2>
+                    <p>This search will provides live top and breaking headlines for a country or specific category in a country. You can also search with keywords. Articles are sorted by the earliest date published first.</p>
+                </div>
+
+                <div class="display__content--item">
+                    <label for="country">Country</label>
+                    <select name="country" id="hl-country" class="search-option">
+                        <option value="ae">United Arab Emirates</option>
+                        <option value="ar">Argentina</option>
+                        <option value="at">Austria</option>
+                        <option selected="selected" value="au">Australia</option>
+                        <option value="be">Belgium</option>
+                        <option value="bg">Bulgaria</option>
+                        <option value="br">Brazil</option>
+                        <option value="ca">Canada</option>
+                        <option value="ch">Switzerland</option>
+                        <option value="cn">China</option>
+                        <option value="co">Colombia</option>
+                        <option value="cu">Cuba</option>
+                        <option value="cz">Czechia</option>
+                        <option value="de">Germany</option>
+                        <option value="eg">Egypt</option>
+                        <option value="fr">France</option>
+                        <option value="gb">Gabon</option>
+                        <option value="gr">Greece</option>
+                        <option value="hk">Hong Kong</option>
+                        <option value="hu">Hungary</option>
+                        <option value="id">Indonesia</option>
+                        <option value="ie">Ireland</option>
+                        <option value="il">Israel</option>
+                        <option value="in">India</option>
+                        <option value="it">Italy</option>
+                        <option value="jp">Japan</option>
+                        <option value="kr">South Korea</option>
+                        <option value="lt">Lithuania</option>
+                        <option value="lv">Latvia</option>
+                        <option value="ma">Morocco</option>
+                        <option value="mx">Mexico</option>
+                        <option value="my">Malaysia</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="nl">Netherlands</option>
+                        <option value="no">Norway</option>
+                        <option value="nz">New Zealand</option>
+                        <option value="ph">Philippines</option>
+                        <option value="pl">Poland</option>
+                        <option value="pt">Portugal</option>
+                        <option value="ro">Romania</option>
+                        <option value="rs">Serbia</option>
+                        <option value="ru">Russia</option>
+                        <option value="sa">Saudi Arabia</option>
+                        <option value="se">Sweden</option>
+                        <option value="sg">Singapore</option>
+                        <option value="si">Slovenia</option>
+                        <option value="sk">Slovakia</option>
+                        <option value="th">Thailand</option>
+                        <option value="tr">Turkey</option>
+                        <option value="tw">Taiwan</option>
+                        <option value="ua">Ukraine</option>
+                        <option value="us">United States of America</option>
+                        <option value="ve">Venezuela</option>
+                        <option value="za">South Africa</option>
+                    </select>
+                </div>
+
+                <div class="display__content--item">
+                    <label for="category">Categroy</label>
+                    <select name="category" id="hl-category" class="search-option">
+                        <option value="general">General</option>
+                        <option value="business">Business</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="health">Health</option>
+                        <option value="science">Science</option>
+                        <option value="sports">Sports</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                </div>
+
+                <div class="display__content--item">
+                    <label for="search">Search Term</label>
+                    <input type="text" id="hl-search" class="search-option">
+                </div>
+
+                <button id="headlines-search" class="btn btn__primary" >Search</button>
+
+            </div>
+
+            <div class="display__content tabcontent" id="everything">
+                    <div class="display__content--item"  >
+                        <h2 id="et-title">All Things</h2>
+                        <p>Search through millions of articles from over 30,000 large and small news sources and blogs. This includes breaking news as well as lesser articles. (Searches must include a source and/or keywords)</p>
+                    </div>
+    
+                    <div class="display__content--item">
+                        <label for="language">Language</label>
+                        <select name="language" id="et-language" class="search-option">
+                            <option value="ar">Arabic</option>
+                            <option value="de">German</option>
+                            <option selected="selected" value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="he">Hebrew</option>
+                            <option value="it">Italian</option>
+                            <option value="nl">Dutch</option>
+                            <option value="no">Norwegian</option>
+                            <option value="pt">Portuguese</option>
+                            <option value="ru">Russian</option>
+                            <option value="se">Northern Sami</option>
+                            <option value="zh">Chinese</option>
+                        </select>
+                    </div>
+    
+                    <div class="display__content--item">
+                        <label for="sortBy">Sort By</label>
+                        <select name="sort" id="et-sort" class="search-option">
+                                <option value="publishedAt">Published At</option>
+                                <option value="relevancy">Relevancy</option>
+                                <option value="popularity">Popularity</option>
+                        </select>
+                    </div>
+
+                    <div class="selected-tab">
+                            <div id="selected-1" class="selected">
+                              <span id="end-1" class="end"></span>
+                            </div>
+                          </div>
+
+                    <div class="dropdown">
+                        <div class="dropdown__btn btn__primary"><h3 class="dropdown__text">Choose Sources</h3>
+                            <div class="dropdown__menu">
+
+                                <div id="dropdown-1" class="dropdown__container">
+                                    <ul class="dropdown__container--sub">
+                                        <li class="item" id="abc-news" href="#">ABC News</li>
+                                        <li class="item" id="bbc-news" href="#">BBC News</li>
+                                        <li class="item" id="business-insider-uk" href="#">Business Insider (UK)</li>
+                                        <li class="item" id="cnn" href="#">CNN</li>
+                                        <li class="item" id="financial-times" href="#">Financial Times</li>
+                                    </ul>
+
+                                    <ul class="dropdown__container--sub">
+                                        <li class="item" id="abc-news-au" href="#">ABC News (AU)</li>
+                                        <li class="item" id="bbc-sport" href="#">BBC Sport</li>
+                                        <li class="item" id="buzzfeed" href="#">Buzzfeed</li>
+                                        <li class="item" id="crypto-coins-news" href="#">Crypto Coins News</li>
+                                        <li class="item" id="fox-news" href="#">Fox News</li>
+                                    </ul>
+
+                                    <ul class="dropdown__container--sub">
+                                        <li class="item" id="al-jazeera-english" href="#">Al Jazeera English</li>
+                                        <li class="item" id="bloomberg" href="#">Bloomberg</li>
+                                        <li class="item" id="cbc-news" href="#">CBC News</li>
+                                        <li class="item" id="daily-mail" href="#">Daily Mail</li>
+                                        <li class="item" id="fox-sports" href="#">Fox Sports</li>
+                                    </ul>
+
+                                    <ul class="dropdown__container--sub">
+                                        <li class="item" id="australian-finanical-review" href="#">Australian Financial Review</li>
+                                        <li class="item" id="breitbart-news" href="#">Breitbart News</li>
+                                        <li class="item" id="cbs-news" href="#">CBS News</li>
+                                        <li class="item" id="entertainment-weekly" href="#">Entertainment Weekly</li>
+                                        <li class="item" id="google-news" href="#">Google News</li>
+                                    </ul>
+
+                                    <ul class="dropdown__container--sub">
+                                        <li class="item" id="associated-press" href="#">Associated Press</li>
+                                        <li class="item" id="business-insider" href="#">Business Insider</li>
+                                        <li class="item" id="cnbc" href="#">CNBC</li>
+                                        <li class="item" id="espn" href="#">ESPN </li>
+                                        <li class="item" id="hacker-news" href="#">Hacker News</li>
+                                    </ul>
+                                </div>                   
+       
+                            </div>
+
+                    
+                        </div>
+                    </div>
+    
+                    <div class="display__content--item">
+                        <label for="search">Search Term</label>
+                        <input type="text" id="et-search" class="search-option">
+                    </div>
+    
+                    <button id="everything-search" class="btn btn__primary" >Search</button>
+    
+                </div>
+
+                <div class="display__content tabcontent" id="sources">
+                        <div class="display__content--item"  >
+                            <h2>Sources</h2>
+                            <p>This will return the subset of news publishers that top headlines  are available from. It's mainly a search that you can use to keep track of the publishers that are available on the platform.</p>
+                        </div>
+        
+                        <div class="display__content--item">
+                            <label for="country">Country</label>
+                            <select name="country" class="search-option" id="src-country">
+                                <option value="ae">United Arab Emirates</option>
+                                <option value="ar">Argentina</option>
+                                <option value="at">Austria</option>
+                                <option selected="selected" value="au">Australia</option>
+                                <option value="be">Belgium</option>
+                                <option value="bg">Bulgaria</option>
+                                <option value="br">Brazil</option>
+                                <option value="ca">Canada</option>
+                                <option value="ch">Switzerland</option>
+                                <option value="cn">China</option>
+                                <option value="co">Colombia</option>
+                                <option value="cu">Cuba</option>
+                                <option value="cz">Czechia</option>
+                                <option value="de">Germany</option>
+                                <option value="eg">Egypt</option>
+                                <option value="fr">France</option>
+                                <option value="gb">Gabon</option>
+                                <option value="gr">Greece</option>
+                                <option value="hk">Hong Kong</option>
+                                <option value="hu">Hungary</option>
+                                <option value="id">Indonesia</option>
+                                <option value="ie">Ireland</option>
+                                <option value="il">Israel</option>
+                                <option value="in">India</option>
+                                <option value="it">Italy</option>
+                                <option value="jp">Japan</option>
+                                <option value="kr">South Korea</option>
+                                <option value="lt">Lithuania</option>
+                                <option value="lv">Latvia</option>
+                                <option value="ma">Morocco</option>
+                                <option value="mx">Mexico</option>
+                                <option value="my">Malaysia</option>
+                                <option value="ng">Nigeria</option>
+                                <option value="nl">Netherlands</option>
+                                <option value="no">Norway</option>
+                                <option value="nz">New Zealand</option>
+                                <option value="ph">Philippines</option>
+                                <option value="pl">Poland</option>
+                                <option value="pt">Portugal</option>
+                                <option value="ro">Romania</option>
+                                <option value="rs">Serbia</option>
+                                <option value="ru">Russia</option>
+                                <option value="sa">Saudi Arabia</option>
+                                <option value="se">Sweden</option>
+                                <option value="sg">Singapore</option>
+                                <option value="si">Slovenia</option>
+                                <option value="sk">Slovakia</option>
+                                <option value="th">Thailand</option>
+                                <option value="tr">Turkey</option>
+                                <option value="tw">Taiwan</option>
+                                <option value="ua">Ukraine</option>
+                                <option value="us">United States of America</option>
+                                <option value="ve">Venezuela</option>
+                                <option value="za">South Africa</option>
+                            </select>
+                        </div>
+        
+                        <div class="display__content--item">
+                            <label for="category">Categroy</label>
+                            <select name="category" class="search-option" id="src-category">
+                                <option value="general">General</option>
+                                <option value="business">Business</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="health">Health</option>
+                                <option value="science">Science</option>
+                                <option value="sports">Sports</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+        
+                        <button id="sources-search" class="btn btn__primary" >Search</button>
+        
+                    </div>
+
+
+        </div>
+    </main> 
+
+    <div class="loader"></div>
+
+    <div class="news-feed" >
+
+            <!-- <div class="card">
+                <div class="card__content">
+                    <h2>Article Title </h2>
+                    <h4>Article Description</h4>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit tempora nemo eius magnam deleniti dolor voluptas nulla reprehenderit suscipit, incidunt inventore? Deleniti animi eligendi placeat quidem odit neque consequatur in sapiente maiores nesciunt, corrupti asperiores mollitia earum, autem saepe facere!</p>
+                    <p>Author: Rene Laverdure</p>
+                    <p>Publication: BuzzFeed </p>
+                    <p>Published at: 23/544/2019</p>
+                    <a href=${item.url} target="_blank" class="btn btn__primary">View Full Article</a>
+                </div>
+            </div>
+
+            <div class="card card__img">
+                    <div class="card__img--img">
+                    <img src="photo-1451857652021-e406bc6bfea9.jpg">
+                    </div>
+                    <div class="card__img--content">
+                        <h2 class="highlighted">
+                                Eiffel Tower closed down after intruder tries to climb up </h2>
+                        <div class="mg">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan varius tortor vitae malesuada. Duis mollis lacus vel efficitur luctus. Morbi varius nibh eu nibh porttitor, sed ultricies nisl venenatis. Donec iaculis ac elit sit amet sagittis. Nullam accumsan v</h4>
+                        </div>
+                        <div class="mg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan varius tortor vitae malesuada. Duis mollis lacus vel efficitur luctus. Morbi varius nibh eu nibh porttitor, sed ultricies nisl</p>
+                        </div>
+                        <p>Author: author</p>
+                        <p>Publication: Buzzfeed </p>
+                        <p>Published at: 123789/21380/12</p>
+                        <a href=${item.url} target="_blank" class="btn btn__primary">View Full Article</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                        <div class="card__content">
+                            <h2>Eiffel Tower closed down after intruder tries to climb up </h2>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan varius tortor vitae malesuada. Duis mollis lacus vel efficitur luctus. Morbi varius nibh eu nibh porttitor, sed ultricies nisl venenatis. Donec iaculis ac elit sit amet sagittis. Nullam accumsan v</h4>
+                            <p>Category: Science</p>
+                            <p>Language: English</p>
+                            <p>Country: Australia </p>
+                            <a href=${item.url} target="_blank" class="btn btn__primary">Visit Website</a>
+                        </div>
+                      </div> -->
+
+    </div>
+
+  
+    <script src="scripts/ui.js" ></script>
+    <script src="scripts/newsApi.js" ></script>
+    <script src="app.js" ></script>
+
+</body>
+</html>

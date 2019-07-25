@@ -1,0 +1,95 @@
+.card {
+  width: 70%;
+  background: rgb(41,110,128);
+  background: linear-gradient(21deg, rgba(41,110,128,1) 35%, rgba(120,81,255,1) 100%);
+  color: white;
+
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 15px 19px 8px -5px rgba(204,204,204,1);
+  -moz-box-shadow: 15px 19px 8px -5px rgba(204,204,204,1);
+  box-shadow: 15px 19px 8px -5px rgba(204,204,204,1);
+
+  &__content {
+    padding: 2rem 2rem;
+
+  }
+
+  &__content > h2, h4, p, a {
+    margin-top: .5rem;
+  }
+
+//cards with an image
+  &__img {
+    display: flex;
+
+    @media screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
+
+    &--img {
+        width: 100%;
+        height: auto;
+      
+        @media screen and (max-width: $bp-large-2) {
+          width: 150%;
+        }
+
+        @media screen and (max-width: $bp-large) {
+          width: 100%;
+          height: auto;
+        }
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        overflow: none;
+        
+      }
+    }
+
+    
+
+    &--content {
+      margin: 1.5rem 2rem;
+      padding: .5rem;
+      align-self: center;
+      justify-self: center;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      a {
+        width: 50%;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+
+        @media screen and (max-width: $bp-large) {
+          display: block;
+          margin: auto;
+          margin-top: 1.5rem;
+        }
+        
+      }
+    }
+  }
+
+}
+
+
+
+
+

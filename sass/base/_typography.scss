@@ -1,0 +1,34 @@
+.underline {
+  border-bottom: 2px solid white;
+  color: currentColor;
+  padding-bottom: 1rem; 
+  display: inline-block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.db-line {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  // letter-spacing: .5rem;
+  padding: 1rem;
+  transition: all .2s;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: white;
+  }
+
+  &:hover,
+  &:active {
+    background-color:white;
+  }
+}
