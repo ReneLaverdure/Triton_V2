@@ -28,4 +28,12 @@
     transform: translateY(-.5rem);
   }
 
+  @media screen and (max-width: $bp-small) {
+    padding: 12px 14px;
+  }
+
+  @media screen and (max-width: $bp-x-small) {
+    padding: 8px 10px;
+  }
+
 }

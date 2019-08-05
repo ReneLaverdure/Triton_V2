@@ -78,6 +78,12 @@ a {
   .btn:hover {
     background: #5e30f5;
     transform: translateY(-0.5rem); }
+  @media screen and (max-width: 37.5em) {
+    .btn {
+      padding: 12px 14px; } }
+  @media screen and (max-width: 31.25em) {
+    .btn {
+      padding: 8px 10px; } }
 
 .card {
   width: 70%;
@@ -213,6 +219,9 @@ a {
 
 .main {
   padding: 5rem; }
+  @media screen and (max-width: 37.5em) {
+    .main {
+      padding: 2rem; } }
 
 .title {
   display: block;
@@ -225,7 +234,8 @@ a {
       margin-left: 10%; } }
   @media screen and (max-width: 37.5em) {
     .title {
-      margin-left: 5%; } }
+      margin-left: 5%;
+      margin-top: 1rem; } }
 
 .display {
   position: relative;
@@ -246,6 +256,9 @@ a {
   @media screen and (max-width: 37.5em) {
     .display {
       width: 90%; } }
+  @media screen and (max-width: 31.25em) {
+    .display {
+      width: 100%; } }
   .display__header {
     padding: 1rem;
     border-radius: 20px;

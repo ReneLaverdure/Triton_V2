@@ -1,5 +1,9 @@
 .main {
   padding: 5rem;
+
+  @media screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
 }
 
 .title {
@@ -15,6 +19,7 @@
 
   @media screen and (max-width: $bp-small) {
     margin-left: 5%;
+    margin-top: 1rem;
   }
 
   
@@ -42,6 +47,10 @@
 
   @media screen and (max-width: $bp-small) {
     width: 90%;
+  }
+
+  @media screen and (max-width: $bp-x-small) {
+    width: 100%;
   }
 
   
